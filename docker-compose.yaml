@@ -1,0 +1,23 @@
+## TODO: Rewrite for idleproxy
+
+# services:
+#   idleproxy:
+#     build:
+#       context: .
+#       dockerfile: Dockerfile
+#     privileged: true
+#     ports:
+#       - "8080:80"
+#       - "8081:8080"
+#     environment:
+#       MJPG_STREAMER_INPUT: "input_http.so -H 192.168.0.4 -p 38080"
+#       MJPG_STREAMER_PORT: "8080"
+#       MJPG_STREAMER_CAMERA_DEVICE: ""
+#       IDLE_TIMEOUT: "15s"
+#       IDLEPROXY_PROCESS_CMD: "while true; do echo 'Hi :-)'; sleep 1; done"
+#       IDLEPROXY_DEBUG: "true"
+#     # Limit to 50% of a single CPU core
+#     cpus: 0.5
+#     # Limit to 64-128MB of memory
+#     mem_limit: 128m
+#     mem_reservation: 64m
