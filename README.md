@@ -1,6 +1,6 @@
 # Idle Proxy
 
-_TODO: Add a description._
+A dynamic, transparent proxy which can sleep and resume on active or idle connections.
 
 ## Features
 
